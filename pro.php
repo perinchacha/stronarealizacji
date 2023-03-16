@@ -9,7 +9,6 @@
 	}
 	
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,7 +16,8 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<a href="logout.php" class="us" >wyloguj</a>
+
+<a href="logout.php"><img src="image/logouticon.png" alt="Wyloguj" style="width:42px;height:42px;" class="out"> </a>
 
 	<div>
 		<form method="POST" action="add.php">

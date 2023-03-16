@@ -1,4 +1,16 @@
 <?php
+
+	session_start();
+	
+	if (!isset($_SESSION['zalogowany']))
+	{
+		header('Location: index.php');
+		exit();
+	}
+	
+?>
+
+<?php
 	include('conn.php');
 	$id=$_GET['id'];
 	$query=mysqli_query($conn,"select * from `test` where id='$id'");

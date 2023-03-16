@@ -1,4 +1,15 @@
 <?php
+
+	session_start();
+	
+	if (!isset($_SESSION['zalogowany']))
+	{
+		header('Location: index.php');
+		exit();
+	}
+	
+?>
+<?php
 	include('conn.php');
 	$id=$_GET['id'];
  
