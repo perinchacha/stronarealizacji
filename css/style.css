@@ -1,159 +1,183 @@
-
 body {
-    background-color: rgb(17, 27, 37);
+  background-color: rgb(17, 27, 37);
 }
 table {
-    width: 100%;
-    padding: 5px; 
+  width: 100%;
+  padding: 1px;
 }
+
 td {
-    /*border: 1px solid rgb(255, 255, 255);*/
-    color: white;
-    padding: 1px;
-    text-align: center;
-    font-size: 18px;
-    font-family: 'Calibri';
+  /*border: 1px solid rgb(255, 255, 255);*/
+  color: white;
+  padding: 1px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Calibri";
 }
+
+th {
+  /*border: 1px solid rgb(255, 255, 255);*/
+  color: white;
+  padding: 1px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Calibri";
+}
+
 label {
-    color: white;
-    font-size: 18px;
-    font-family: 'Calibri';
+  color: white;
+  font-size: 18px;
+  font-family: "Calibri";
 }
 
 textarea {
-    background-color: rgb(187, 187, 187);
-    color: black;
-    padding: 12px 50px;
-    text-align: center;
-    border-radius: 8px;
-    
+  background-color: rgb(187, 187, 187);
+  color: black;
+  padding: 12px 50px;
+  text-align: center;
+  border-radius: 8px;
 }
 
-a.ed:link, a.ed:visited{
-    background-color: rgb(26, 80, 26);
-    color: white;
-    padding: 10px 18px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 8px;
+a.ed:link,
+a.ed:visited {
+  background-color: rgb(26, 80, 26);
+  color: white;
+  padding: 10px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
 }
 
-a.ed:hover, a.ed:active {
-    background-color: rgb(34, 94, 34);
+a.ed:hover,
+a.ed:active {
+  background-color: rgb(34, 94, 34);
 }
 
-
-a.us:link, a.us:visited {
-    background-color: #f44336;
-    color: white;
-    padding: 10px 18px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 8px;
+a.us:link,
+a.us:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 18px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
 }
 
-a.us:hover, a.us:active {
-    background-color: red;
+a.us:hover,
+a.us:active {
+  background-color: red;
 }
 
-input[type=text] {
-    background-color: rgb(187, 187, 187);
-    color: black;
-    padding: 12px 50px;
-    text-align: center;
-    border-radius: 8px;
-    
+input[type="text"] {
+  background-color: rgb(187, 187, 187);
+  color: black;
+  padding: 12px 50px;
+  text-align: center;
+  border-radius: 8px;
 }
 
-input[type=submit] {
-    background-color: rgb(0, 153, 0);
-    color: white;
-    padding: 12px 18px;
-    text-align: center;
-    border-radius: 8px;
+input[type="submit"] {
+  background-color: rgb(0, 153, 0);
+  color: white;
+  padding: 12px 18px;
+  text-align: center;
+  border-radius: 8px;
 }
 
-input[type=submit]:hover, input[type=submit]:active {
-    background-color: green;
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  background-color: green;
 }
 
-
-
-
-thead{
-    font:bold;
+thead {
+  font: bold;
 }
-
 
 h2 {
-    color: white;
+  color: white;
 }
 
 /*cechy  checkboxów*/
 .container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  /* Hide the browser's default checkbox */
-  .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-  }
-  
-  /* Create a custom checkbox */
-  .checkmark {
-    position: absolute;
-    top: -5px;
-    left: 44%;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .container:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-  
-  /* When the checkbox is checked, add a blue background */
-  .container input:checked ~ .checkmark {
-    background-color: #2196F3;
-  }
-  
-  /* Create the checkmark/indicator (hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the checkmark when checked */
-  .container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  /* Style the checkmark/indicator */
-  .container .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: -5px;
+  left: 44%;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.out {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+}
+
+.parz {
+  background-color: rgb(25, 40, 54);
+}
+
+form {
+  padding-top: 80px;
+}
